@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/detailmainString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Pakistan"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/detailSubString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pakistan"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/detailmainString"
+                app:layout_constraintTop_toBottomOf="@+id/detailmainString" />
+
+            <TextView
+                android:id="@+id/detailTimeString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="14 Times"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/detailmainString"
+                app:layout_constraintTop_toBottomOf="@+id/detailSubString" />
+
+            <TextView
+                android:id="@+id/detailSilverString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silver 1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintStart_toStartOf="@+id/detailBronzeString"
+                app:layout_constraintTop_toBottomOf="@+id/detailBronzeString" />
+
+            <TextView
+                android:id="@+id/detailBronzeString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bronze 1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/detailGoldString"
+                app:layout_constraintTop_toBottomOf="@+id/detailGoldString" />
+
+            <TextView
+                android:id="@+id/detailGoldString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold 0"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/detailmainString"
+                app:layout_constraintTop_toBottomOf="@+id/detailTimeString" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
